@@ -8,5 +8,9 @@
   ],
   "engines": {
     "node": ">= 0.4.1 < 0.7.0"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "http://etherpad.org/"
   }
 }
