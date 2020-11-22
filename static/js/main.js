@@ -1,11 +1,10 @@
-function copyPad () {
+function copyPad() {
   padRev = 'latest';
-  padId = $(location).attr('href').split("/").pop();
+  padId = $(location).attr('href').split('/').pop();
 
-  params = ["old=" + padId];
-  if (padRev != 'latest')
-    params.push("old_rev=" + padRev);
+  params = [`old=${padId}`];
+  if (padRev != 'latest') params.push(`old_rev=${padRev}`);
   params = params.join('&');
 
-  window.location = "/copy?" + params;
+  window.location = `/copy?${params}`;
 }
