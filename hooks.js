@@ -166,7 +166,7 @@ exports.buildHistoricalAuthorData = function (pad, cb) {
       (err) => {
         if (ERR(err, cb)) return;
         cb(null, historicalAuthorData);
-      }
+      },
   );
 };
 
